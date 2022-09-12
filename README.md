@@ -6,7 +6,7 @@
 
 ### This project contains: 
 
-. Spring MVC \
+. Spring MVC and Spring Security \
 . Thymeleaf template engine \
 ⋅ MySQL as Database Service JPA \
 ⋅ Best practices and folder structure \
