@@ -37,9 +37,14 @@
                 </table>
             </div>
 
+            <form method="POST" th:action="@{/logout}" class="cerrar">
+                <a href="#" onclick="this.parentNode.submit();">Cerrar Sesión</a>
+            </form>
+            
             <div th:if="${personas == null or personas.empty}">
                 La lista de personas está vacia
             </div>
+            
         </div> 
     </body>
 </html>
