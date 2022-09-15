@@ -3,6 +3,7 @@ import java.io.Serializable;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import lombok.Data;
 
 @Data //GET y SET
@@ -28,4 +29,7 @@ public class Persona implements Serializable{
     
     @NotEmpty(message = "El telefono no puede ir vacio")
     private String telefono;
+    
+    @NotNull(message= "El saldo no puede ir vacio")
+    private Double saldo;
 }
